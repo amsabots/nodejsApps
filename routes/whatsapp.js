@@ -4,6 +4,7 @@ const config = require("config");
 const { getClient } = require("../controllers/account");
 const { Search } = require("../controllers/shop");
 const _ = require("lodash");
+const twilio = require("twilio");
 const SendMessage = require("../controllers/send");
 const { LogMessage } = require("../controllers/logmessages");
 const { AddAux } = require("../helper/send");
@@ -15,7 +16,7 @@ var value = {
   number: 10
 };
 const { HashedRequests, SpecialWords } = require("../helper/wordsprocessor");
-router.post("/reply", (req, res) => {
+router.post("/reply",  twilio.webhook({protocol: 'https', validate: true }), (req, res) => {
  console.log(req.body);
   let request = null,
     page = 0;
