@@ -9,6 +9,7 @@ const SendMessage = require("../controllers/send");
 const { LogMessage } = require("../controllers/logmessages");
 const { AddAux } = require("../helper/send");
 //const sms = require("../controllers/sms");
+const shouldValidate = process.env.NODE_ENV !== 'test';
 const { UpdateTimeZone } = require("../controllers/logmessages");
 const People = require("../models/logmessages");
 var value = {
@@ -16,7 +17,7 @@ var value = {
   number: 10
 };
 const { HashedRequests, SpecialWords } = require("../helper/wordsprocessor");
-router.post("/reply",  twilio.webhook({protocol: 'https'}), (req, res) => {
+router.post("/reply",  twilio.webhook({protocol: 'https', validate:shouldValidate}), (req, res) => {
  console.log(req.body);
   let request = null,
     page = 0;
