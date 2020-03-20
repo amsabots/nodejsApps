@@ -16,7 +16,7 @@ var value = {
 };
 const { HashedRequests, SpecialWords } = require("../helper/wordsprocessor");
 router.post("/reply", (req, res) => {
-  console.log(req.body);
+ console.log(req.body);
   let request = null,
     page = 0;
   getClient(req.body)

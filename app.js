@@ -29,7 +29,7 @@ app.use(express.json());
 
 app.use("/users", require("./routes/user"));
 app.use("/sms", require("./routes/sms"));
-app.use("/whatsapp", require("./routes/whatsapp"));
+app.use("/webhook", require("./routes/whatsapp"));
 app.use("/shop", require("./routes/shop"));
 app.use("/whatsapp", require("./routes/whatsappstatus"));
 app.listen(port, console.log(`app listening on port ${port}`));
