@@ -17,7 +17,7 @@ var value = {
   number: 10
 };
 const { HashedRequests, SpecialWords } = require("../helper/wordsprocessor");
-router.post("/reply",  twilio.webhook({protocol: 'https', validate:shouldValidate}), (req, res) => {
+router.post("/reply",  twilio.webhook({protocol: 'https', validate:false}), (req, res) => {
  console.log(req.body);
   let request = null,
     page = 0;
