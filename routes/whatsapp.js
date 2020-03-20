@@ -17,7 +17,7 @@ var value = {
   number: 10
 };
 const { HashedRequests, SpecialWords } = require("../helper/wordsprocessor");
-router.post("/reply",  twilio.webhook({protocol: 'https', validate:false}), (req, res) => {
+router.post("/reply",  twilio.webhook({protocol: 'https', validate:false, host:'glacial-island-87322.herokuapp.com'}), (req, res) => {
  console.log(req.body);
   let request = null,
     page = 0;
