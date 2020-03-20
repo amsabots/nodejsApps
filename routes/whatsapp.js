@@ -7,7 +7,7 @@ const _ = require("lodash");
 const SendMessage = require("../controllers/send");
 const { LogMessage } = require("../controllers/logmessages");
 const { AddAux } = require("../helper/send");
-const sms = require("../controllers/sms");
+//const sms = require("../controllers/sms");
 const { UpdateTimeZone } = require("../controllers/logmessages");
 const People = require("../models/logmessages");
 var value = {
@@ -139,12 +139,12 @@ router.post("/reply", (req, res) => {
           }
         } else {
           //use admin account to  send messages
-          sms(user, {
-            to: user.basicinfo.phonenumber,
-            body: config.get("smsInsufficient")
-          })
-            .then(message => console.log(message))
-            .catch(err => console.log(err));
+          // sms(user, {
+          //   to: user.basicinfo.phonenumber,
+          //   body: config.get("smsInsufficient")
+          // })
+          //   .then(message => console.log(message))
+          //   .catch(err => console.log(err));
         }
       } else {
         console.log("some extra evaluation");
