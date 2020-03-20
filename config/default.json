@@ -1,0 +1,84 @@
+{
+  "MongoUri": "mongodb+srv://amsabots:andrewmwebi5426@cluster0-37w0a.mongodb.net/test?retryWrites=true&w=majority",
+  "smsInsufficient": "Your account is receiving customer request but cannot reply due to insufficient balance\nfrom Discoverycity",
+  "responseError": {
+    "invalid#": "Hey, Am sorry i cannot submit what you have submitted after #\nrespond with 'help' ill see what i can do for you"
+  },
+  "requestAtt": "You might wanna open Sara, An attention request by one of your customer has been made",
+  "help": [
+    "help",
+    "don't understand",
+    "way forward",
+    "dont understand",
+    "understand",
+    "help me"
+  ],
+  "hello": [
+    "hi",
+    "hello",
+    "sema",
+    "niaje",
+    "hey there",
+    "hello there",
+    "hey whatsup",
+    "hey",
+    "hello anyone"
+  ],
+  "info": ["info", "more info", "information", "more infomation"],
+  "location": [
+    "where are you found",
+    "where are you located",
+    "located",
+    "your location",
+    "location",
+    "where are your offices found",
+    "where are your office found",
+    "where are your shops found",
+    "where are your shop found"
+  ],
+  "more": ["more", "next"],
+  "wholeDb": "If you have not find whatever you were looking for, Respond with \n✅ *_search# name of place/business_* e.g (search# Tuskys Nairobi West)\nto find the keyName of a place _(if its available_ or with\n✅ *_find# whatever you looking_* e.g (find# Leather shoes for kids) for suggestions\n✅ To perfom a search just type whatever you want e,g (_dark blue khaki trousers for kids_)\n   😎😎 _Please Take note of the format_ ",
+  "typo": "~make sure you typed correctly or try being more specific~",
+  "helloresponse": [
+    "*hi🙏🏽🙏🏽!!!*, ",
+    "*heeey✋🏾✋🏾!!!*, ",
+    "*hey there 🙋🏽🙋🏽*, ",
+    "*hi there🤗🤗*, ",
+    "*hey👋🏽👋🏽, how you are doing?*, ",
+    "*hello there😎😎*, "
+  ],
+  "helpresponse": "Welcome to DiscoveryCity HelpCenter🌐🌐. This are various request format to Use this service::\n➡️ use *order#* _to place an order_ e.g(order#5e011bbe43033b2290090690)\n➡️ use *feedback#* _to submit your feedback/review_ e.g(feedback#i love this place)\n➡️ use *att#* _to directly sms product/service providers_ e.g(att#are your prices fixed)",
+  "payment": [
+    {
+      "startsession": {
+        "quiz": "do you wish to proceed with your order above?",
+        "ans": ["yes", "no"],
+        "error": "Sorry, i did not get that, please reply with either *yes or no* to confirm order"
+      }
+    },
+    {
+      "name": {
+        "quiz": "please Enter you *Full name*",
+        "error": "You have provided an invalid name, Enter your Official name"
+      }
+    },
+    {
+      "location": {
+        "quiz": "Where do you want it to be delivered? (_please be specific i.e city and locality_)",
+        "error": "Thats is an invalid response"
+      }
+    },
+    { "quantity": { "quiz": "How many do you want?" } }
+  ],
+  "feedback": ["feed", "feedback", "fd", "fback"],
+  "ord": ["order", "o", "od"],
+  "delete": ["delete", "remove", "remov", "del"],
+  "timeago": {
+    "lessthan10": [
+      "Hey There🤗🤗, We are glad for your continous use of this service, We are glad to have you as our customer",
+      "Hello there, Hope you are enjoying this service,We are always glad to serve you Dear client🙏🏼🙏🏼",
+      "Hey, Hope you are doing fine, Thought i should just say Hi😊😊"
+    ]
+  },
+  "find": ["find"]
+}
