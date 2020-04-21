@@ -1,5 +1,5 @@
 {
-  "MongoUri": "mongodb+srv://amsabots:andrewmwebi5426@cluster0-37w0a.mongodb.net/test?retryWrites=true&w=majority",
+  "MongoUri": "#",
   "smsInsufficient": "Your account is receiving customer request but cannot reply due to insufficient balance\nfrom Discoverycity",
   "responseError": {
     "invalid#": "Hey, Am sorry i cannot submit what you have submitted after #\nrespond with 'help' ill see what i can do for you"
